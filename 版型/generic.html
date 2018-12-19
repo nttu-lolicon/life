@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>人生</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+<style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">數學 <span>人生</span></a></div>
+				<a href="#menu">清單</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">生活</a></li>
+					<li><a href="elements.html">數學</a></li>
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>人生</p>
+						<h2>轉眼即逝的生活</h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<p id="demo">數學真棒???</p>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = '不其實很痛苦!'">O(OO)O</button>
+								<h2>計畫趕不上變化</h2>
+							</header>
+
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<div id="piechart" style="width: 900px; height: 500px;"></div>
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart(){
+	var data = google.visualization.arrayToDataTable([
+['Task', 'Hours per Day'],
+['玩樂', 8], ['吃飯', 2], ['唸書', 2], ['發呆', 4], ['睡覺', 8]
+]);
+	var options = {
+    title: '一天的活動',is3D: true,
+    slices:{
+1: {offset:0.3},
+3: {offset:0.3},
+5: {offset:0.1}},
+pieHole: 0.4
+    
+};
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);
+}
+</script>
+
+							<p>國小期間</p>
+
+							<p>國中期間</p>
+
+							<p>高中期間 </p>
+
+							<P>我的高中</P>
+							<h3>My Google Maps Demo</h3>
+<div id="map"></div>
+<script>
+function initMap() {
+var uluru = {lat:  22.9867120, lng:120.1791262 };
+var map = new google.maps.Map(document.getElementById('map'), {zoom: 16, center: uluru});
+var marker = new google.maps.Marker({position: uluru, map: map});
+var infowindow = new google.maps.InfoWindow({
+content: 'National Taitung University'
+});
+marker.addListener('click', function() {infowindow.open(map, marker);});
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKS6J7isN4tqg_863oCIUIT-rz9okQCQE&callback=initMap"> </script>
+
+							<P>大學期間</P>
+
+							<h4>台東大學 圈圈就是美麗的圖書館</h4>
+							<div id="map1" style="width: 600px; height: 400px"></div>
+<script>
+var map1 = L.map('map1').setView([22.736571, 121.0657029], 17);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '&copy; <ahref="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map1); 
+var circle = L.circle([22.736071, 121.0680029], {color: 'blue', fillColor: 'yellow', fillOpacity: 0.5, radius: 14}).addTo(map1);
+marker.bindPopup("<b>Hello</b>").openPopup();
+
+</script>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			
+
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
